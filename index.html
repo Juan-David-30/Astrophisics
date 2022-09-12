@@ -34,6 +34,29 @@
         <H1 id="title">Astrophysics</H1>
         <p> By: Juan David Castañeda Betancourt</p>
     </header>
-    <script src="Resources/script.js"></script>
+    <script>
+        gsap.from('#title', {
+            duration: 3,
+            x: -3000
+        })
+        gsap.to('#title',{
+            delay: 4,
+            duration: 2,
+            x: 100
+        });
+        gsap.from('nav',{
+            delay: 5.5,
+            y: -150,
+            duration: .7,
+            ease: 'lineal'
+        });
+        gsap.to('#xd',{
+            delay: 4,
+            duration: 3,
+            color: 'transparent',
+            backgroundColor: 'transparent',
+            display: 'none'
+        });
+    </script>
 </body>
 </html>

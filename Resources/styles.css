@@ -99,6 +99,7 @@ main{
     margin-bottom: 50px;
     align-items: center;
     min-height: 500px;
+    flex-wrap: wrap;
 }
 #section1{
     background-color: rgba(240, 248, 255, 0.141);

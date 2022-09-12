@@ -1,34 +1,47 @@
-gsap.from('#title', {
-    duration: 3,
-    x: -3000
-})
-gsap.to('#title',{
-    delay: 4,
-    duration: 2,
-    x: 100
-})
-gsap.to('#xd',{
-    delay: 4,
-    duration: 3,
-    color: 'transparent',
-    backgroundColor: 'transparent',
-    
-    display: 'none'
-});
-gsap.to('#load, #loader',{
-    delay: 3,
-    duration: 2,
-    color: 'transparent',
-    backgroundColor: 'transparent',
-    display: 'none'
-});
 
-gsap.from('nav',{
-    delay: 5.5,
-    y: -150,
-    duration: .7,
-    ease: 'lineal'
-})
+window.onload = 
+function disapearLoad() {  
+
+    gsap.to('#load, #loader',{
+        duration: 2,
+        color: 'transparent',
+        backgroundColor: 'transparent',
+        display: 'none'
+    });
+    gsap.to('#xd',{
+        duration: 3,
+        color: 'transparent',
+        backgroundColor: 'transparent',
+        display: 'none'
+    });
+
+    gsap.from('nav',{
+        delay: 1.5,
+        y: -150,
+        duration: .7,
+        ease: 'lineal'
+    });
+
+    gsap.from('#section1, #section2', {
+        delay: 1,
+        duration: 2,
+        y: 50,
+        x: 00,
+        ease: 'lineal'
+    });
+    gsap.from('#section1, #section2', {
+        delay: 3,
+        duration: 1,
+        backgroundColor: 'transparent',
+    });
+    gsap.from('#contentsection',{
+        delay: 2,
+        duration: 2,
+        opacity: 0,
+        display: 'none',
+        y: 80
+    });
+}
 let loader = gsap.timeline({ repeat: 8, yoyo: true});
 
 loader.to('#load',{
