@@ -34,7 +34,7 @@ function disapearLoad() {
         duration: 1,
         backgroundColor: 'transparent',
     });
-    gsap.from('#contentsection',{
+    gsap.from('#contentsection, #titlesection',{
         delay: 2,
         duration: 2,
         opacity: 0,
