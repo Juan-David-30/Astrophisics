@@ -42,7 +42,7 @@ function disapearLoad() {
         y: 80
     });
 }
-let loader = gsap.timeline({ repeat: 8, yoyo: true});
+let loader = gsap.timeline({ repeat: 25, yoyo: true});
 
 loader.to('#load',{
     duration: .5,
