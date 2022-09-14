@@ -5,7 +5,8 @@
     color: white;
 }
 body{
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Colorful-Galaxy-Pictures.jpg');
+   background-image: url('img/background.jpeg');
+    background-color: rgb(1, 1, 67);
     background-repeat: no-repeat;
     background-attachment: fixed;
     
@@ -19,7 +20,7 @@ header{
 }
 header > p {
     margin-top: 175px;
-    margin-left: 500px;
+    margin-left:450px;
     text-decoration: underline double white 1px;
 }
 nav{
@@ -33,7 +34,7 @@ nav{
    right: 0;
    width: 60%;
    border-radius: 0 0 0 35px;
-   z-index: 51;
+   z-index: 49;
 }
 nav > ul {
     width: 100%;

@@ -22,6 +22,11 @@ function disapearLoad() {
         ease: 'lineal'
     });
 
+    cargarSection();
+
+}
+
+function cargarSection(){
     gsap.from('#section1, #section2', {
         delay: 1,
         duration: 2,
@@ -42,10 +47,10 @@ function disapearLoad() {
         y: 80
     });
 }
-let loader = gsap.timeline({ repeat: 8, yoyo: true});
+let loader = gsap.timeline({ repeat: -1, yoyo: true});
 
 loader.to('#load',{
     duration: .5,
     x: 145,
     ease: 'lineal'
-})
+});
